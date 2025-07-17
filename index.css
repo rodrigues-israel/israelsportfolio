@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #11071F;
+}
+
+.span {
+    color: #7127BA;
+}
+
+#header {
+    background-color: #1A0B2E;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    padding: 10px;
+    width: 3vw;
+}
+
+#header ul {
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1vw;
+}
+
+#header ul li {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+#header ul svg {
+    width: 1vw;
+}
+
+#header ul li a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#header ul li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#header ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#hero {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+
+#me {
+    height: 30vw;
+    width: 20vw;
+    background: radial-gradient(ellipse 45% 35%, white, #240F46 55%, #11071F);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#character {
+    width: 10vw;
+}
+
+#arrow {
+    position: absolute;
+    top: 25%;
+    left: 68%;
+    width: 40%;
+}
+
+#herotext {
+    color: white;
+    font-family: "Preahvihear", sans-serif;
+    position: relative;
+}
+
+#herotext h3 {
+    font-weight: 200;
+    font-size: 1vw;
+}
+
+#herotext :nth-child(2) {
+    text-decoration: underline;
+    text-decoration-color: #7127BA;
+}
+
+#herotext h1 {
+    font-size: 2.5vw;
+    font-weight: 200;
+    display: inline-block;
+}
+
+#herotext h1 span {
+    background: url(Ellipse.png) no-repeat center;
+    background-size: contain;
+}
+
+#herotext p {
+    font-size: 1vw;
+    padding: 20px 0;
+}
+
+#section-1 {
+    color: white;
+    font-family: "Preahvihear", sans-serif;
+    margin: 0 30vw;
+}
+
+#section-1 h1 {
+    font-size: 2vw;
+    font-weight: 200;
+}
+
+#section-1 h3 {
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+
+#section-1 p {
+    padding: 5vh 0;
+    font-size: 1vw;
+    font-weight: 200;
+}
+
+#section-1 h3 span {
+    text-decoration: underline;
+}
+
+#section-3 {
+    color: white;
+    font-family: "Preahvihear", sans-serif;
+    text-align: center;
+    padding: 5vh 0;
+}
+
+#section-3 p{
+    font-size: 2vw;
+}
+
+#section-3 p {
+    font-size: 1vw;
+    padding-bottom: 20px;
+}
+
+.techstack {
+    padding: 10px 20px ;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.techstack svg {
+    width: 5vw;
+    height: 5vw;
+    border: 2px solid #7127BA;
+    border-radius: 10px;
+    padding: 20px 20px;
+    transition: .7s ease;
+}
+
+.techstack svg:hover {
+    transform: scale(1.1);
+}
+
+#connect {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding: 3vw 0;
+    background-color: #0A0416;
+}
+
+#connect h3 {
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+#connect p {
+    font-size: 1.1vw;
+    padding: 10px;
+}
+
+#connect svg {
+    padding: 10px;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    background-color: white;
+}
+
+#connect-logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+#projects {
+    padding: 10vh 0;
+}
+
+#projects>h3:first-child {
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 3vw;
+}
+
+#projects>p {
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1vw;
+}
+
+.project {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 5vw 10vw;
+    display: flex;
+    background: radial-gradient(ellipse 20% 55%, #240F46 55%, #11071F);
+    position: relative;
+}
+
+.right {
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+.projecttext {
+    position: relative;
+    z-index: 10;
+}
+
+.project svg {
+    width: 2vw;
+    height: 2vw;
+}
+
+.projecttext h3 {
+    font-size: 2vw;
+    color: #CCD6F6;
+    padding: 1.5vw 0;
+}
+
+.projecttext p {
+    font-size: 1vw;
+    color: #CCD6F6;
+    width: 40vw;
+    padding: 1vw 3vw;
+    border-radius: 10px;
+}
+
+.project img {
+    position: relative;
+    right: 10%;
+    border-top: #2B0B3A solid 2vw;
+    border-left: #2B0B3A solid 2vw;
+    width: 40vw;
+    border-radius: 10px;
+}
+
+.glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.right img {
+    position: absolute;
+    left: 10%;
+    border-top: #2B0B3A solid 2vw;
+    border-right: #2B0B3A solid 2vw;
+    border-left: 0;
+}
+
+@media (max-width:600px) {
+    #header {
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo {
+        visibility: hidden;
+    }
+
+    #header ul li svg {
+        width: 3vw;
+    }
+
+    #header ul li a {
+        font-size: 2.5vw;
+    }
+
+    #hero {
+        padding: 3vh 0;
+    }
+
+    #me {
+        width: 200px;
+        height: 300px;
+    }
+
+    #character {
+        width: 20vw;
+    }
+
+    #herotext h3 {
+        font-size: 2.5vw;
+    }
+
+    #herotext h1 {
+        font-size: 3vw;
+    }
+
+    #herotext p {
+        font-size: 2vw;
+        padding: 20px 0;
+    }
+
+    #section-1 {
+        margin: 0 10vw;
+    }
+
+    #section-1 h1 {
+        font-size: 4vw;
+    }
+
+    #section-1 h3 {
+        font-size: 3vw;
+    }
+
+    #section-1 p {
+        padding: 2vh 0;
+        font-size: 2.5vw;
+    }
+
+    #projects>h3:first-child {
+        font-size: 7vw;
+    }
+
+    #projects {
+        padding: 5vh 2vw;
+    }
+
+    #projects>p {
+        font-size: 3vw;
+    }
+
+    #connect h3 {
+        font-size: 6vw;
+    }
+
+    #connect p {
+        font-size: 3vw;
+    }
+
+    #connect-logos svg {
+        flex-direction: row;
+    }
+
+    #connect svg {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    #projects{
+        padding-bottom: 0;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column-reverse;
+        background: radial-gradient(ellipse 50% 50%, #240F46 55%, #11071F);
+    }
+
+    .project img {
+        position: static;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project svg {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .projecttext h3 {
+        font-size: 5vw;
+        padding: 1.5vw 0;
+    }
+
+    .projecttext p {
+        font-size: 3vw;
+        width: 90%;
+        padding: 2vw 5vw;
+    }
+
+    .project img {
+        border: 2px solid #CCD6F6;
+        width: 75vw;
+    }
+
+    .techstack {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        justify-items: center;
+    }
+
+    .techstack svg {
+        width: 20vw;
+        height: 20vw;
+        gap: 10px;
+    }
+
+    #section-3 {
+        padding: 20px;
+    }
+
+    #section-3 h3{
+        font-size: 3.5vw;
+    }
+
+    #section-3 p{
+        font-size: 3vw;
+    }
+}
+
+@media (max-width:1024px){
+    #header {
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo {
+        visibility: hidden;
+    }
+
+    #header ul li svg {
+        width: 3vw;
+    }
+    
+    #header ul li {
+        font-size: 3vw;
+    }
+    
+    #hero {
+        padding: 3vh 0;
+    }
+
+    #me {
+        width: 30vw;
+        height: 40vh;
+    }
+
+    #character {
+        width: 20vw;
+    }
+
+    #herotext h3 {
+        font-size: 2vw;
+    }
+
+    #herotext h1 {
+        font-size: 3vw;
+    }
+
+    #herotext p {
+        font-size: 2vw;
+        padding: 20px 0;
+    }
+
+    #section-1 {
+        margin: 0 10vw;
+    }
+
+    #section-1 h1 {
+        font-size: 3vw;
+    }
+
+    #section-1 h3 {
+        font-size: 2vw;
+    }
+
+    #section-1 p {
+        padding: 2vh 0;
+        font-size: 2vw;
+    }
+
+    #projects>h3:first-child {
+        font-size: 5vw;
+    }
+
+    #projects>p {
+        font-size: 3vw;
+    }
+
+    #connect h3 {
+        font-size: 6vw;
+    }
+
+    #connect p {
+        font-size: 3vw;
+    }
+
+    #connect-logos svg {
+        flex-direction: row;
+    }
+
+    #connect svg {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    #section-3 h3{
+        font-size: 3vw;
+    }
+
+    #section-3 p{
+        font-size: 2vw;
+    }
+}
