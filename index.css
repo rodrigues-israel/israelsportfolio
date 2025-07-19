@@ -28,11 +28,6 @@ body {
     align-items: center;
 }
 
-#logo {
-    padding: 10px;
-    width: 3vw;
-}
-
 #header ul {
     list-style: none;
     display: flex;
@@ -389,10 +384,6 @@ body {
         gap : 10vw;
     }
 
-    #logo {
-        visibility: hidden;
-    }
-
     #header ul li svg {
         width: 3vw;
     }
@@ -553,14 +544,10 @@ body {
     }
 }
 
-/* @media (max-width:1024px){
+@media (min-width: 601px) and (max-width: 1024px){
     #header {
         display: flex;
         justify-content: center;
-    }
-
-    #logo {
-        visibility: hidden;
     }
 
     #header ul li svg {
@@ -577,7 +564,7 @@ body {
 
     #me {
         width: 30vw;
-        height: 40vh;
+        height: 30vh;
     }
 
     #character {
@@ -646,4 +633,4 @@ body {
     #section-3 p{
         font-size: 2vw;
     }
-} */
+}
