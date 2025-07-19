@@ -34,7 +34,6 @@ body {
 }
 
 #header ul {
-    padding: 20px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -86,7 +85,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden;
 }
 
 #character {
@@ -226,7 +224,7 @@ body {
     height: 5vw;
     border: 2px solid #7127BA;
     border-radius: 10px;
-    padding: 20px 20px;
+    padding: 2vw;
     transition: .7s ease;
 }
 
@@ -410,7 +408,7 @@ body {
 
     #me {
         width: 50vw;
-        height: 300px;
+        height: 50vw;
     }
 
     #arrow{
@@ -418,7 +416,7 @@ body {
     }
 
     #character {
-        width: 50vw;
+        width: 40vw;
     }
 
     #name{
@@ -439,7 +437,7 @@ body {
 
     #herotext p {
         font-size: 3vw;
-        padding: 20px 0;
+        padding: 10px 0;
         width: 80vw;
     }
 
@@ -538,11 +536,11 @@ body {
     .techstack svg {
         width: 15vw;
         height: 15vw;
-        gap: 10px;
+        padding: 5vw;
     }
 
     #section-3 {
-        padding: 20px;
+        padding: 10px;
     }
 
     #section-3 h3{
@@ -551,6 +549,7 @@ body {
 
     #section-3 p{
         font-size: 3.5vw;
+        padding-bottom: 0;
     }
 }
 
