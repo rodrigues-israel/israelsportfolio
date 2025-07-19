@@ -24,7 +24,7 @@ body {
     width: 100%;
     height: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -38,7 +38,7 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 7vw;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 1vw;
 }
@@ -64,9 +64,9 @@ body {
     text-decoration: none;
 }
 
-#header ul li a:hover {
+#header ul li:hover{
     color: white;
-    text-decoration: underline;
+    transform: translate(0,-2px);
 }
 
 #hero {
@@ -75,27 +75,31 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1%;
+    padding: 10vh 0;
 }
 
 #me {
-    height: 30vw;
-    width: 20vw;
+    height: 25vw;
+    width: 25vw;
     background: radial-gradient(ellipse 45% 35%, white, #240F46 55%, #11071F);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 #character {
-    width: 10vw;
+    width: 20vw;
+    overflow: hidden;
 }
 
 #arrow {
     position: absolute;
-    top: 25%;
-    left: 68%;
-    width: 40%;
+    top: 12%;
+    left: 75%;
+    width: 30%;
+    animation: load 2s ease-in;
 }
 
 #herotext {
@@ -104,9 +108,21 @@ body {
     position: relative;
 }
 
+#name{
+    font-size: 2vw;
+    color: #CCD6F6;
+}
+
 #herotext h3 {
     font-weight: 200;
-    font-size: 1vw;
+    font-size: 1.5vw;
+    animation: load 3s ease-in;
+}
+
+#herotext h4 {
+    font-weight: 200;
+    font-size: 1.2vw;
+    animation: load 3s ease-in;
 }
 
 #herotext :nth-child(2) {
@@ -115,40 +131,66 @@ body {
 }
 
 #herotext h1 {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     font-weight: 200;
     display: inline-block;
+    animation: load 3s ease-in,
+    moveinleft 1s ease-in;
 }
 
 #herotext h1 span {
-    background: url(Ellipse.png) no-repeat center;
+    background: url(/src/ellipse.png) no-repeat center;
     background-size: contain;
 }
 
 #herotext p {
-    font-size: 1vw;
+    font-size: 1.2vw;
     padding: 20px 0;
+    width: 30vw;
+    animation: load 3s ease-in;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes  moveinleft{
+    0%{
+        transform: translateX(1.5vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 #section-1 {
-    color: white;
+    color: #11071F;
     font-family: "Preahvihear", sans-serif;
-    margin: 0 30vw;
+    margin: 0 15vw;
+    background-color: white;
+    padding:  3vw;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #section-1 h1 {
-    font-size: 2vw;
-    font-weight: 200;
+    font-size: 3vw;
+    font-weight: 600;
 }
 
 #section-1 h3 {
-    font-size: 1.2vw;
-    font-weight: 200;
+    font-size: 1.5vw;
+    font-weight: 400;
 }
 
 #section-1 p {
-    padding: 5vh 0;
-    font-size: 1vw;
+    padding: 2vh 0;
+    font-size: 1.2vw;
     font-weight: 200;
 }
 
@@ -305,10 +347,48 @@ body {
     border-left: 0;
 }
 
+/* Animations */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease-out, transform 2.5s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hiddenleft {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.showleft {
+  opacity: 1;
+  transform: translateX(0); 
+}
+
+.hiddenright {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.showright {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 @media (max-width:600px) {
-    #header {
-        display: flex;
+    #header{
         justify-content: center;
+        align-items: center;
+    }
+
+    #header ul{ 
+        gap : 10vw;
     }
 
     #logo {
@@ -325,28 +405,42 @@ body {
 
     #hero {
         padding: 3vh 0;
+        flex-direction: column;
     }
 
     #me {
-        width: 200px;
+        width: 50vw;
         height: 300px;
     }
 
+    #arrow{
+        visibility: hidden;
+    }
+
     #character {
-        width: 20vw;
+        width: 50vw;
+    }
+
+    #name{
+        font-size: 5vw;
     }
 
     #herotext h3 {
-        font-size: 2.5vw;
+        font-size: 5vw;
+    }
+
+    #herotext h4 {
+        font-size: 4vw;
     }
 
     #herotext h1 {
-        font-size: 3vw;
+        font-size: 8vw;
     }
 
     #herotext p {
-        font-size: 2vw;
+        font-size: 3vw;
         padding: 20px 0;
+        width: 80vw;
     }
 
     #section-1 {
@@ -354,20 +448,20 @@ body {
     }
 
     #section-1 h1 {
-        font-size: 4vw;
+        font-size: 7vw;
     }
 
     #section-1 h3 {
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 
     #section-1 p {
         padding: 2vh 0;
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
 
     #projects>h3:first-child {
-        font-size: 7vw;
+        font-size: 8vw;
     }
 
     #projects {
@@ -375,15 +469,15 @@ body {
     }
 
     #projects>p {
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 
     #connect h3 {
-        font-size: 6vw;
+        font-size: 8vw;
     }
 
     #connect p {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     #connect-logos svg {
@@ -420,12 +514,12 @@ body {
     }
 
     .projecttext h3 {
-        font-size: 5vw;
+        font-size: 6vw;
         padding: 1.5vw 0;
     }
 
     .projecttext p {
-        font-size: 3vw;
+        font-size: 4vw;
         width: 90%;
         padding: 2vw 5vw;
     }
@@ -437,13 +531,13 @@ body {
 
     .techstack {
         display: grid;
-        grid-template-columns: 150px 150px;
+        grid-template-columns: 30vw 30vw;
         justify-items: center;
     }
 
     .techstack svg {
-        width: 20vw;
-        height: 20vw;
+        width: 15vw;
+        height: 15vw;
         gap: 10px;
     }
 
@@ -452,15 +546,15 @@ body {
     }
 
     #section-3 h3{
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
 
     #section-3 p{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 }
 
-@media (max-width:1024px){
+/* @media (max-width:1024px){
     #header {
         display: flex;
         justify-content: center;
@@ -553,4 +647,4 @@ body {
     #section-3 p{
         font-size: 2vw;
     }
-}
+} */
